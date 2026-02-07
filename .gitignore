@@ -1,0 +1,30 @@
+# ----------------------
+# R-specific files
+# ----------------------
+.Rhistory
+.Rproj.user/
+*.RData
+*.RDS
+
+# ----------------------
+# Large data folders (ignore all raster and CSV files)
+# ----------------------
+Data/LST/
+Data/NDVI/
+Residuals/
+Residual_Maps/
+
+# ----------------------
+# Outputs (plots, PDF, PNG)
+# ----------------------
+*.png
+*.pdf
+*.tif
+*.csv
+
+# ----------------------
+# OS/IDE files
+# ----------------------
+.DS_Store
+Thumbs.db
+.vscode/
