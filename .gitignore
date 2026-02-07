@@ -17,7 +17,6 @@ Residual_Maps/
 # ----------------------
 # Outputs (plots, PDF, PNG)
 # ----------------------
-*.pdf
 *.tif
 *.csv
 
