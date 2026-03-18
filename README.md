@@ -1,6 +1,5 @@
 ## Remote sensing of urban heat dynamics and the cooling effect of urban green spaces in Ethiopian cities
-
-Authors: Desalew Meseret Moges, Kristoffer Mattisson, Ebba Malmqvist, Per-Ola Olsson
+#### *Authors: Moges DM., Mattisson K., Malmqvist E., Olsson P.*
 
 ## Abstract
 
