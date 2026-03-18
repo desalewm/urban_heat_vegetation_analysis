@@ -1,12 +1,20 @@
-## Remote sensing of urban heat dynamics and vegetation cooling effects in Ethiopian cities
+## Remote sensing of urban heat dynamics and the cooling effect of urban green spaces in Ethiopian cities
 
 Authors: Desalew Meseret Moges, Kristoffer Mattisson, Ebba Malmqvist, Per-Ola Olsson
 
 ## Abstract
 
-Urban heat stress has become a major challenge in the context of rapid urbanization and climate change, posing risks to public health and urban livability. Green spaces are widely recognized as a key strategy for mitigating urban heat. However, understanding how thermal dynamics interact with vegetation across different urban forms remains essential yet underexplored. In this study, we utilize satellite-derived datasets to analyze the spatiotemporal patterns of urban heat and vegetation cover, as well as their interactions, during the hot season between 2020 and 2024 across four Ethiopian cities: Addis Ababa, Adama, Jimma, and Harar, representing diverse urban morphologies and climatic conditions. Our findings show an increase in vegetation cover in all cities over the study period, concentrating along urban fringes while remaining scarce in dense central districts, most notably in Addis Ababa and Adama. This spatial disparity highlights uneven green infrastructure distribution in highly built-up areas. Urban surface temperature showed complementary yet complex dynamics. Daytime temperature declined markedly across all cities (p < 0.001). In contrast, nighttime temperature trends were mixed, warming in Adama and Jimma but stable in Addis Ababa and Harar, leading to a contraction of the diurnal temperature range. The vegetation–temperature relationship was strong and consistent in Addis Ababa and Jimma (R² > 0.51, p < 0.001) but weak and erratic in Adama and Harar (R² < 0.10). Residual temperature analyses revealed localized hotspots not explained by vegetation alone, linked to impervious surfaces and exposed soils. Heatwave characteristics further underscored climatic divergence, with Addis Ababa and Jimma experiencing longer but moderate-duration events, whereas Harar experienced shorter yet more intense events. Overall, the results reveal emerging spatial heterogeneity in urban heat regimes and underscore the need for context-specific greening and surface management strategies to support climate-resilient urban futures in Ethiopia and beyond.
+Urban heat stress is becoming a serious problem as cities grow quickly and the climate warms. Green spaces can help cool cities, but we still need to better understand how heat and vegetation interact in different types of urban areas. In this study, we used satellite data to examine heat and vegetation patterns during the hot season from 2020 to 2024 in four Ethiopian cities: Addis Ababa, Adama, Jimma, and Harar.
 
-![Summary map](GA.png)
+We found that vegetation cover increased in all cities, mostly around the urban edges, while central, densely built areas, especially in Addis Ababa and Adama, remained low in vegetation. This shows that green spaces are unevenly distributed.
+Daytime surface temperature decreased in all cities (p < 0.001), but nighttime temperature behaved differently: it increased in Adama and Jimma, and stayed stable in Addis Ababa and Harar. 
+
+The link between vegetation and temperature was strong in Addis Ababa and Jimma (R² > 0.51, p < 0.001), but weak in Adama and Harar (R² < 0.10). We also found hotspots that could not be explained by vegetation alone; these were mainly in areas with many impervious surfaces and exposed soil. Heatwaves also differed between cities. Addis Ababa and Jimma had longer but moderate heatwaves, while Harar had shorter but more intense ones.
+
+Overall, our results show growing differences in urban heat conditions across cities, highlighting the need for city‑specific greening and surface‑management strategies to support climate‑resilient urban planning in Ethiopia.
+
+
+![Summary map](GA.jpg)
 
 ## Funding
 
