@@ -14,7 +14,7 @@ The link between vegetation and temperature was strong in Addis Ababa and Jimma 
 Overall, our results show growing differences in urban heat conditions across cities, highlighting the need for city‑specific greening and surface‑management strategies to support climate‑resilient urban planning in Ethiopia.
 
 
-![Summary map](GA.jpg)
+![Summary map](GA.png)
 
 ## Funding
 
