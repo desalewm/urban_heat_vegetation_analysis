@@ -4,12 +4,12 @@ Authors: Desalew Meseret Moges, Kristoffer Mattisson, Ebba Malmqvist, Per-Ola Ol
 
 ## Abstract
 
-Urban heat stress is becoming a serious problem as cities grow quickly and the climate warms. Green spaces can help cool cities, but we still need to better understand how heat and vegetation interact in different types of urban areas. In this study, we used satellite data to examine heat and vegetation patterns during the hot season from 2020 to 2024 in four Ethiopian cities: Addis Ababa, Adama, Jimma, and Harar.
+Urban heat stress is becoming a serious problem as cities grow quickly and the climate warms. Green spaces can help cool cities, but we still need to better understand how heat and urban green spaces interact in different types of urban areas. In this study, we used satellite data to examine heat and urban green space patterns during the hot season from 2020 to 2024 in four Ethiopian cities: Addis Ababa, Adama, Jimma, and Harar.
 
-We found that vegetation cover increased in all cities, mostly around the urban edges, while central, densely built areas, especially in Addis Ababa and Adama, remained low in vegetation. This shows that green spaces are unevenly distributed.
+We found that urban green spaces increased in all cities, mostly around the urban edges, while central, densely built areas, especially in Addis Ababa and Adama, remained low in vegetation. This shows that green spaces are unevenly distributed.
 Daytime surface temperature decreased in all cities (p < 0.001), but nighttime temperature behaved differently: it increased in Adama and Jimma, and stayed stable in Addis Ababa and Harar. 
 
-The link between vegetation and temperature was strong in Addis Ababa and Jimma (R² > 0.51, p < 0.001), but weak in Adama and Harar (R² < 0.10). We also found hotspots that could not be explained by vegetation alone; these were mainly in areas with many impervious surfaces and exposed soil. Heatwaves also differed between cities. Addis Ababa and Jimma had longer but moderate heatwaves, while Harar had shorter but more intense ones.
+The link between urban green spaces and temperature was strong in Addis Ababa and Jimma (R² > 0.51, p < 0.001), but weak in Adama and Harar (R² < 0.10). We also found hotspots that could not be explained by urban green spaces alone; these were mainly in areas with many impervious surfaces and exposed soil. Heatwaves also differed between cities. Addis Ababa and Jimma had longer but moderate heatwaves, while Harar had shorter but more intense ones.
 
 Overall, our results show growing differences in urban heat conditions across cities, highlighting the need for city‑specific greening and surface‑management strategies to support climate‑resilient urban planning in Ethiopia.
 
