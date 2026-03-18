@@ -194,3 +194,5 @@ p_monthly <- ggplot(ndvi_df) +
 print(p_monthly)
 ggsave(paste0(output_dir, "Monthly_NDVI_Addis.png"), p_monthly,
        width = 10, height = 6, dpi = 300)
+
+#//

@@ -18,4 +18,8 @@ Overall, our results show growing differences in urban heat conditions across ci
 
 ## Funding
 
-This study was funded by the European Union's Horizon Europe Research and Innovation Programme under the ENABLE Project (Grant Agreement # 101137232). Views and opinions expressed are, however, those of the author(s) only and do not necessarily reflect those of the European Union or the Health and Digital Executive Agency (HADEA). Neither the European Union nor the granting authority can be held responsible for them. The funder of this study had no role in study design, data collection, data analysis, data interpretation, the writing of the report, or the decision to submit the manuscript for publication.
+This study was funded by the European Union's Horizon Europe Research and Innovation Programme under the ENABLE Project (Grant Agreement # 101137232). 
+
+Views and opinions expressed are, however, those of the author(s) only and do not necessarily reflect those of the European Union or the Health and Digital Executive Agency (HADEA). 
+
+Neither the European Union nor the granting authority can be held responsible for them. The funder of this study had no role in study design, data collection, data analysis, data interpretation, the writing of the report, or the decision to submit the manuscript for publication.
