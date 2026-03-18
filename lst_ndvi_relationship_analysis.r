@@ -163,5 +163,4 @@ ggplot(df_all, aes(NDVI,LST)) +
   labs(x="NDVI", y="LST (°C)") + theme_bw(base_size=12)
 
 
-#//
 

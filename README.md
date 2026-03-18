@@ -14,7 +14,7 @@ The link between urban green spaces and temperature was strong in Addis Ababa an
 Overall, our results show growing differences in urban heat conditions across cities, highlighting the need for city‑specific greening and surface‑management strategies to support climate‑resilient urban planning in Ethiopia.
 
 
-![Summary map](GA.png)
+![Summary map](Image.png)
 
 ## Funding
 
@@ -23,3 +23,4 @@ This study was funded by the European Union's Horizon Europe Research and Innova
 Views and opinions expressed are, however, those of the author(s) only and do not necessarily reflect those of the European Union or the Health and Digital Executive Agency (HADEA). 
 
 Neither the European Union nor the granting authority can be held responsible for them. The funder of this study had no role in study design, data collection, data analysis, data interpretation, the writing of the report, or the decision to submit the manuscript for publication.
+
