@@ -1,37 +1,28 @@
+# =====================================================
+# Title: Remote Sensing of Urban Heat Dynamics and the Cooling Effect of Urban Green Spaces in Ethiopian Cities
+# LST Analysis
+# =====================================================
 
-# LST analysis
-
-# ============================================================
 # PART 0: LIBRARIES AND PATH
-# ============================================================
+library(terra)       
+library(sf)         
+library(sp)          
+library(spdep)       
+library(ggplot2)     
+library(tmap)        
+library(dplyr)      
+library(tidyr)       
+library(lubridate)   
+library(data.table)  
+library(scales)      
+library(e1071)       
+library(tidyverse)   
 
-# ============================================================
-# Load Required Libraries 
-# ============================================================
-library(terra)       # raster handling
-library(sf)          # spatial vector data
-library(sp)          # spatial objects for Gi*
-library(spdep)       # spatial autocorrelation / Gi*
-library(ggplot2)     # plotting
-library(tmap)        # thematic mapping (optional)
-library(dplyr)       # data manipulation
-library(tidyr)       # data reshaping
-library(lubridate)   # date handling
-library(zoo)         # rolling mean / smoothing
-library(data.table)  # run-length encoding
-library(scales)      # formatting scales
-library(e1071)       # skewness / stats
-library(tidyverse)   # includes ggplot2, dplyr, tidyr (optional)
-
-# ============================================================
 # PART 1: Multi-City Multi-Year Spatial Distribution of LST (2021–2024)
-# ============================================================
-
 # Define cities, years, and base path
 cities <- c("Addis", "Adama", "Jimma", "Harar")
 years  <- 2021:2024
-base_path <- "/Users/drdesalewmoges/Documents/Papers/RS_Heat_Exposure/Data/LST/"
-
+base_path <- "Data/LST/"
 
 # Read and combine rasters (all cities & years)
 df_all <- expand.grid(City = cities, Year = years) %>%
@@ -51,13 +42,11 @@ df_all <- expand.grid(City = cities, Year = years) %>%
   select(data) %>%
   bind_rows()
 
-
 # Custom LST palette
 palette_lst <- c(
   "#235cb1", "#2171b5", "#6baed6", "#86e26f",
   "#fff705", "#ffb613", "#ff500d", "#CD2626"
 )
-
 
 # Multi-city × multi-year plot
 p <- ggplot(df_all, aes(x = x, y = y, fill = LST)) +
@@ -79,14 +68,10 @@ p <- ggplot(df_all, aes(x = x, y = y, fill = LST)) +
 
 print(p)
 
-
-# ============================================================
-# PART 2: Daily Land Surface Temperature Trends in Selected Ethiopian Cities (2021–2024)
-# ============================================================
-
+# PART 2: Daily LST Trends in Selected Ethiopian Cities (2021–2024)
 # Define cities and base path
 cities <- c("Addis", "Adama", "Jimma", "Harar")
-base_path <- "/Users/drdesalewmoges/Documents/Papers/RS_Heat_Exposure/Data/LST/"
+base_path <- "Data/LST/"
 
 # Read and preprocess LST (all cities)
 lst <- lapply(cities, function(cty) {
@@ -156,13 +141,10 @@ ts_plot <- ggplot(lst_season, aes(x = season_index)) +
 
 ts_plot
 
-# ============================================================
 # PART 3: Seasonal Distribution of Daytime and Nighttime LST Across Ethiopian Cities (2021–2024)
-# ============================================================
-
 # Define cities and base path
 cities <- c("Addis", "Adama", "Jimma", "Harar")
-base_path <- "/Users/drdesalewmoges/Documents/Papers/RS_Heat_Exposure/Data/LST/"
+base_path <- "Data/LST/"
 
 # Read and preprocess LST (all cities)
 lst <- lapply(cities, function(cty) {
@@ -247,13 +229,10 @@ bplot <- ggplot(
 
 bplot
 
-# ============================================================
 # PART 4: LST Getis–Ord Gi* Hotspot Analysis for Multiple Cities
-# ============================================================
-
 # Global parameters
-base_path  <- "/Users/drdesalewmoges/Documents/Papers/RS_Heat_Exposure/Data/LST/"
-output_dir <- "/Users/drdesalewmoges/Documents/Papers/RS_Heat_Exposure/Output/Hotspot"
+base_path  <- "Data/LST/"
+output_dir <- "Output/Hotspot"
 k_neighbors <- 6
 utm_crs <- "+proj=utm +zone=37 +datum=WGS84 +units=m +no_defs"
 
@@ -427,11 +406,8 @@ city_skew_df <- data.frame(
 
 city_skew_df
 
-# ============================================================
 # PART 5: LST-Based Heatwave Detection (Daytime & Nighttime)
 # Multiple Cities | CTX90pct | 2021–2024
-# ============================================================
-
 # Generic heatwave detection function
 detect_heatwaves <- function(file_path,
                              city_name,
@@ -579,8 +555,8 @@ cities <- tribble(
   "Jimma",       "jimma_day.csv", "jimma_night.csv"
 )
 
-data_dir   <- "/Users/drdesalewmoges/Documents/Papers/RS_Heat_Exposure/Data/LST/"
-output_dir <- "/Users/drdesalewmoges/Documents/Papers/RS_Heat_Exposure/Output/"
+data_dir   <- "Data/LST/"
+output_dir <- "Output/"
 
 # Run heatwave detection for all cities & periods
 results <- pmap(
@@ -593,14 +569,16 @@ results <- pmap(
         city_name = city,
         time_period = "Daytime",
         lst_column = "LST_Day_C",
-        output_plot_path = paste0(output_dir, "daytime_heatwave_", tolower(gsub(" ", "_", city)), ".png")
+        output_plot_path = paste0(output_dir, "daytime_heatwave_", 
+                                  tolower(gsub(" ", "_", city)), ".png")
       ),
       Nighttime = detect_heatwaves(
         file_path = paste0(data_dir, night_file),
         city_name = city,
         time_period = "Nighttime",
         lst_column = "LST_Night_C",
-        output_plot_path = paste0(output_dir, "nighttime_heatwave_", tolower(gsub(" ", "_", city)), ".png")
+        output_plot_path = paste0(output_dir, "nighttime_heatwave_", 
+                                  tolower(gsub(" ", "_", city)), ".png")
       )
     )
   }
@@ -615,15 +593,12 @@ heatwave_summary_all <- bind_rows(
 
 heatwave_summary_all
 
-# ============================================================
-# PART 6: Mean Monthly Land Surface Temperature Patterns Across Major Ethiopian Cities (2021–2024)
-# ============================================================
-
+# PART 6: Mean Monthly LST Patterns Across Major Ethiopian Cities (2021–2024)
 # Define cities and paths
 cities <- c("Addis", "Adama", "Jimma", "Harar")
 
-data_dir   <- "/Volumes/Data/Papers/Heat_Exposure/Data/LST/"
-output_dir <- "/Volumes/Data/Papers/Heat_Exposure/Output/"
+data_dir   <- "Data/LST/"
+output_dir <- "Output/"
 
 # Common color palette and breaks
 breaks_common <- round(seq(5, 50, length.out = 7))
@@ -683,18 +658,6 @@ for (city in cities) {
     labs(
       title = paste("Mean Monthly Land Surface Temperature –", city)
     )
-  
-  # Save plot
-  ggsave(
-    filename = paste0(output_dir, "monthly_lst_", tolower(city), ".png"),
-    plot = p,
-    width = 10,
-    height = 6,
-    dpi = 300
-  )
-  
-  cat("Saved monthly LST map for", city, "\n")
 }
-
 
 

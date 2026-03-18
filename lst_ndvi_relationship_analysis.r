@@ -1,10 +1,10 @@
 
+# =====================================================
+# Title: Remote Sensing of Urban Heat Dynamics and the Cooling Effect of Urban Green Spaces in Ethiopian Cities
+# LST–NDVI Relationship Analysis
+# =====================================================
 
-# LST–NDVI Relationship Analysis: Global, GWR, Scatter, and Residual Maps
-
-# -----------------------------
-# 0. Load libraries and define paths
-# -----------------------------
+# PART 0. Load libraries and define paths
 library(terra)
 library(sf)
 library(sp)
@@ -44,15 +44,17 @@ plots_NDVI <- list()
 plots_R2 <- list()
 results <- list()
 
-################################################################################
 # PART 1: Global Regression Residual Maps
-################################################################################
 for(i in seq_along(cities_orig)){
   city_orig <- cities_orig[i]
   city_plot <- cities_plot[i]
   
-  lst_stack <- rast(paste0(lst_base_path, city_orig, "_LST_", years, ".tif")) %>% app(mean, na.rm=TRUE) %>% project(target_crs)
-  ndvi_stack <- rast(paste0(ndvi_base_path, "NDVI_", city_orig, "_FebMay_", years, ".tif")) %>% app(mean, na.rm=TRUE) %>% project(target_crs) %>% resample(lst_stack)
+  lst_stack <- rast(paste0(lst_base_path, 
+                           city_orig, "_LST_",
+                           years, ".tif")) %>% app(mean, na.rm=TRUE) %>% project(target_crs)
+  ndvi_stack <- rast(paste0(ndvi_base_path, "NDVI_", 
+                            city_orig, "_FebMay_", 
+                            years, ".tif")) %>% app(mean, na.rm=TRUE) %>% project(target_crs) %>% resample(lst_stack)
   
   df <- as.data.frame(cbind(values(ndvi_stack), values(lst_stack)), xy=TRUE, na.rm=TRUE)
   colnames(df) <- c("NDVI","LST","x","y")
@@ -76,15 +78,15 @@ for(i in seq_along(cities_orig)){
 
 }
 
-################################################################################
 # PART 2: GWR Maps – Local NDVI Effect & Local R²
-################################################################################
 for(i in seq_along(cities_orig)){
   city_orig <- cities_orig[i]
   city_plot <- cities_plot[i]
   
-  lst_stack <- rast(paste0(lst_base_path, city_orig, "_LST_", years, ".tif")) %>% app(mean, na.rm=TRUE) %>% project(target_crs)
-  ndvi_stack <- rast(paste0(ndvi_base_path, "NDVI_", city_orig, "_FebMay_", years, ".tif")) %>% app(mean, na.rm=TRUE) %>% project(target_crs) %>% resample(lst_stack)
+  lst_stack <- rast(paste0(lst_base_path, 
+                           city_orig, "_LST_", years, ".tif")) %>% app(mean, na.rm=TRUE) %>% project(target_crs)
+  ndvi_stack <- rast(paste0(ndvi_base_path, "NDVI_", 
+                            city_orig, "_FebMay_", years, ".tif")) %>% app(mean, na.rm=TRUE) %>% project(target_crs) %>% resample(lst_stack)
   
   df <- as.data.frame(cbind(values(ndvi_stack), values(lst_stack)), xy=TRUE, na.rm=TRUE)
   colnames(df) <- c("NDVI","LST","x","y")
@@ -129,9 +131,7 @@ for(i in seq_along(cities_orig)){
 wrap_plots(plots_NDVI, ncol=2) + plot_annotation(title="Local NDVI Effects on LST")
 wrap_plots(plots_R2, ncol=2) + plot_annotation(title="Local R² Values")
 
-################################################################################
 # PART 3: Scatter Plots – LST vs NDVI
-################################################################################
 df_all <- do.call(rbind, lapply(seq_along(cities_orig), function(i){
   city_orig <- cities_orig[i]; city_plot <- cities_plot[i]
   df_city <- bind_rows(lapply(years, function(y){
@@ -150,7 +150,9 @@ df_all <- do.call(rbind, lapply(seq_along(cities_orig), function(i){
 # Regression labels
 reg_labels <- df_all %>%
   group_by(City, Year) %>%
-  group_modify(~ tibble(label=sprintf("LST=%.2f*NDVI+%.2f", coef(lm(LST~NDVI,data=.x))[2], coef(lm(LST~NDVI,data=.x))[1]),
+  group_modify(~ tibble(label=sprintf("LST=%.2f*NDVI+%.2f", 
+                                      coef(lm(LST~NDVI,data=.x))[2], 
+                                      coef(lm(LST~NDVI,data=.x))[1]),
                         NDVI=0.05, LST=20))
 
 ggplot(df_all, aes(NDVI,LST)) +
@@ -159,7 +161,6 @@ ggplot(df_all, aes(NDVI,LST)) +
   geom_text(data=reg_labels, aes(x=NDVI,y=LST,label=label), inherit.aes=FALSE) +
   facet_grid(City ~ Year) +
   labs(x="NDVI", y="LST (°C)") + theme_bw(base_size=12)
-
 
 
 
