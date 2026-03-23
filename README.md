@@ -1,25 +1,25 @@
-## Remote sensing of urban heat dynamics and the cooling effect of urban green spaces in Ethiopian cities
-#### *Authors: Moges DM., Mattisson K., Malmqvist E., Olsson P.*
+# Remote Sensing of Urban Heat Dynamics and the Cooling Effect of Urban Green Spaces in Ethiopian Cities
 
-## Abstract
+## Overview  
+This repository contains the R code, data processing workflows, and analysis scripts used to investigate urban heat dynamics and the cooling effects of urban green spaces across four Ethiopian cities—Addis Ababa, Adama, Jimma, and Harar—using satellite-based remote sensing data from 2020 to 2024.
 
-Urban heat stress is becoming a serious problem as cities grow quickly and the climate warms. Green spaces can help cool cities, but we still need to better understand how heat and urban green spaces interact in different types of urban areas. In this study, we used satellite data to examine heat and urban green space patterns during the hot season from 2020 to 2024 in four Ethiopian cities: Addis Ababa, Adama, Jimma, and Harar.
+The project follows a fully reproducible, pipeline-based workflow implemented in R, ensuring transparency and consistency across all stages of data processing and analysis.
 
-We found that urban green spaces increased in all cities, mostly around the urban edges, while central, densely built areas, especially in Addis Ababa and Adama, remained low in vegetation. This shows that green spaces are unevenly distributed.
-Daytime surface temperature decreased in all cities (p < 0.001), but nighttime temperature behaved differently: it increased in Adama and Jimma, and stayed stable in Addis Ababa and Harar. 
+## Key Findings  
+- Urban green spaces increased across all cities, with expansion primarily observed at urban peripheries.  
+- Daytime land surface temperatures showed a statistically significant decrease (p < 0.001).  
+- Nighttime temperature trends varied across cities, indicating spatial heterogeneity in thermal dynamics.  
+- Strong vegetation–temperature relationships were observed in Addis Ababa and Jimma (R² > 0.51).  
+- Urban heat hotspots were highly associated with impervious surfaces and exposed soil.  
 
-The link between urban green spaces and temperature was strong in Addis Ababa and Jimma (R² > 0.51, p < 0.001), but weak in Adama and Harar (R² < 0.10). We also found hotspots that could not be explained by urban green spaces alone; these were mainly in areas with many impervious surfaces and exposed soil. Heatwaves also differed between cities. Addis Ababa and Jimma had longer but moderate heatwaves, while Harar had shorter but more intense ones.
+## Data Availability  
+This study utilizes publicly available remote sensing and geospatial datasets.
 
-Overall, our results show growing differences in urban heat conditions across cities, highlighting the need for city‑specific greening and surface‑management strategies to support climate‑resilient urban planning in Ethiopia.
-
-
+## Summary Map  
 ![Summary map](Image.png)
 
-## Funding
+## Funding  
+This study was funded by the European Union’s Horizon Europe Research and Innovation Programme under the ENABLE Project (Grant Agreement No. 101137232). The funder had no role in study design, data collection, data analysis, interpretation of results, or manuscript preparation and submission.
 
-This study was funded by the European Union's Horizon Europe Research and Innovation Programme under the ENABLE Project (Grant Agreement # 101137232). 
-
-Views and opinions expressed are, however, those of the author(s) only and do not necessarily reflect those of the European Union or the Health and Digital Executive Agency (HADEA). 
-
-Neither the European Union nor the granting authority can be held responsible for them. The funder of this study had no role in study design, data collection, data analysis, data interpretation, the writing of the report, or the decision to submit the manuscript for publication.
-
+## Contact  
+For questions or collaboration inquiries, please contact the corresponding author.
