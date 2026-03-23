@@ -3,21 +3,30 @@
 ### Overview  
 This repository contains R scripts used to analyse urban heat dynamics and the cooling effects of urban green spaces in for Ethiopian cities - Addis Ababa, Adama, Jimma, and Harar - using satellite remote sensing data from 2020–2024.
 
-### Key Findings  
+## Repository Contents
+
+- **Image.png** – Summary map of urban green spaces and heat patterns.  
+- **lst_analysis.r** – Land surface temperature analysis.  
+- **lst_ndvi_relationship_analysis.r** – LST–NDVI relationship analysis.  
+- **ndvi_analysis.r** – Vegetation (NDVI) analysis.  
+- **.gitignore** – Git ignore rules.  
+- **README.md** – Project documentation.  
+
+## Key Findings  
 - Urban green spaces increased across all cities, with expansion primarily observed at urban peripheries.  
 - Daytime land surface temperatures showed a statistically significant decrease (p < 0.001).  
 - Nighttime temperature trends varied across cities, indicating spatial heterogeneity in thermal dynamics.  
 - Strong vegetation–temperature relationships were observed in Addis Ababa and Jimma (R² > 0.51).  
 - Urban heat hotspots were highly associated with impervious surfaces and exposed soil.  
 
-### Summary Map  
+## Summary Map  
 ![Summary map](Image.png)
 
-### Funding  
+## Funding  
 This study was funded by the European Union’s Horizon Europe Research and Innovation Programme under the ENABLE Project (Grant Agreement No. 101137232). The funder had no role in study design, data collection, data analysis, interpretation of results, or manuscript preparation and submission.
 
-### Data Availability  
+## Data Availability  
 This study utilizes publicly available remote sensing and geospatial datasets.
 
-### Contact  
+## Contact  
 For questions or collaboration inquiries, please contact the corresponding author.
