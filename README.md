@@ -1,9 +1,7 @@
-### Remote Sensing of Urban Heat Dynamics and the Cooling Effect of Urban Green Spaces in Ethiopian Cities
+## Remote Sensing of Urban Heat Dynamics and the Cooling Effect of Urban Green Spaces in Ethiopian Cities
 
 ### Overview  
 This repository contains R scripts used to analyse urban heat dynamics and the cooling effects of urban green spaces in for Ethiopian cities - Addis Ababa, Adama, Jimma, and Harar - using satellite remote sensing data from 2020–2024.
-
-The project follows a fully reproducible, pipeline-based workflow implemented in R, ensuring transparency and consistency across all stages of data processing and analysis.
 
 ### Key Findings  
 - Urban green spaces increased across all cities, with expansion primarily observed at urban peripheries.  
