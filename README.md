@@ -5,12 +5,13 @@ This repository contains R scripts used to analyse urban heat dynamics and the c
 
 ## Repository Contents
 
-- **Image.png** – Summary map of urban green spaces and heat patterns.  
-- **lst_analysis.r** – Land surface temperature analysis.  
-- **lst_ndvi_relationship_analysis.r** – LST–NDVI relationship analysis.  
-- **ndvi_analysis.r** – Vegetation (NDVI) analysis.  
-- **.gitignore** – Git ignore rules.  
-- **README.md** – Project documentation.  
+- **README.md** – Project overview and documentation.  
+- **.gitignore** – Specifies files excluded from version control.  
+- **Image.png** – Summary map of urban heat and green space patterns.  
+- **ndvi_analysis.r** – NDVI-based vegetation analysis.  
+- **lst_analysis.r** – Land surface temperature (LST) analysis.  
+- **lst_ndvi_relationship_analysis.r** – Analysis of LST–NDVI relationships.  
+- **rs-data-gee.js** – Google Earth Engine scripts for satellite data processing.  
 
 ## Key Findings  
 - Urban green spaces increased across all cities, with expansion primarily observed at urban peripheries.  
@@ -19,14 +20,8 @@ This repository contains R scripts used to analyse urban heat dynamics and the c
 - Strong vegetation–temperature relationships were observed in Addis Ababa and Jimma (R² > 0.51).  
 - Urban heat hotspots were highly associated with impervious surfaces and exposed soil.  
 
-## Summary Map  
 ![Summary map](Image.png)
 
 ## Funding  
 This study was funded by the European Union’s Horizon Europe Research and Innovation Programme under the ENABLE Project (Grant Agreement No. 101137232). The funder had no role in study design, data collection, data analysis, interpretation of results, or manuscript preparation and submission.
 
-## Data Availability  
-This study utilizes publicly available remote sensing and geospatial datasets.
-
-## Contact  
-For questions or collaboration inquiries, please contact the corresponding author.
