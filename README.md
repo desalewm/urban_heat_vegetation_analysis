@@ -1,6 +1,6 @@
 # Remote Sensing of Urban Heat Dynamics and the Cooling Effect of Urban Green Spaces in Ethiopian Cities
 
-*Desalew Meseret Moges¹,², Kristoffer Mattisson², Ebba Malmqvist², Per-Ola Olsson³*
+*Desalew Meseret Moges¹², Kristoffer Mattisson², Ebba Malmqvist², Per-Ola Olsson³*
 
 ¹Nutrition, Environmental Health, and Non-Communicable Disease Research Directorate, Ethiopian Public Health Institute, Addis Ababa, Ethiopia ²Division of Occupational and Environmental Medicine, Lund University, Lund, Sweden ³Department of Physical Geography and Ecosystem Science, Lund University, Lund, Sweden
 
