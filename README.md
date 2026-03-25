@@ -1,27 +1,15 @@
-## Remote Sensing of Urban Heat Dynamics and the Cooling Effect of Urban Green Spaces in Ethiopian Cities
+# Remote Sensing of Urban Heat Dynamics and the Cooling Effect of Urban Green Spaces in Ethiopian Cities
 
-### Overview  
-This repository contains R scripts used to analyse urban heat dynamics and the cooling effects of urban green spaces in for Ethiopian cities - Addis Ababa, Adama, Jimma, and Harar - using satellite remote sensing data from 2020–2024.
+**Desalew Meseret Moges¹², Kristoffer Mattisson², Ebba Malmqvist², Per-Ola Olsson³**
 
-## Repository Contents
+¹ Nutrition, Environmental Health, and Non-Communicable Disease Research Directorate, Ethiopian Public Health Institute, Addis Ababa, Ethiopia  
+² Division of Occupational and Environmental Medicine, Lund University, Lund, Sweden  
+³ Department of Physical Geography and Ecosystem Science, Lund University, Lund, Sweden  
 
-- **README.md** – Project overview and documentation.  
-- **.gitignore** – Specifies files excluded from version control.  
-- **Image.png** – Summary map of urban heat and green space patterns.  
-- **ndvi_analysis.r** – NDVI-based vegetation analysis.  
-- **lst_analysis.r** – Land surface temperature (LST) analysis.  
-- **lst_ndvi_relationship_analysis.r** – Analysis of LST–NDVI relationships.  
-- **rs-data-gee.js** – Google Earth Engine scripts for satellite data processing.  
+## Abstract
+Rapid urban growth is making cities hotter, a trend further exacerbated by climate change. Urban green spaces (UGS) are commonly used as nature-based solutions to reduce heat, but there are gaps in understanding how cooling effects vary across climate zones. Using satellite data from 2021–2024, we examined urban heat and UGS patterns during the hot season across four Ethiopian cities with different sizes, topographies, and climates. UGS expanded in all cities, mainly along urban edges, while dense central areas, especially in Addis Ababa and Adama, remained largely devoid of greenery and more exposed to heat. Daytime surface temperatures decreased in all cities, indicating UGS-related cooling, while nighttime temperatures showed more mixed results. UGS had a strong cooling effect in Addis Ababa and Jimma (R² = 0.53–0.77; p < 0.001), moderate effects in Adama (R² = 0.24–0.42; p < 0.05), and little effect in Harar (R² ≤ 0.07; p > 0.05). This demonstrates that UGS influences heat differently depending on local climate and land cover. Heat hotspots were linked to impervious surfaces, urban agriculture, and soil moisture differences rather than UGS alone. Heatwave patterns also differed: Addis Ababa and Jimma experienced longer but less intense heatwaves, while Adama and Harar experienced shorter but more intense heatwaves. Overall, the results highlight the need for city-specific greening and surface-cover strategies to reduce heat risks and promote climate-resilient urban growth in Ethiopia and other regions experiencing rapid warming.
 
-## Key Findings  
-- Urban green spaces increased across all cities, with expansion primarily observed at urban peripheries.  
-- Daytime land surface temperatures showed a statistically significant decrease (p < 0.001).  
-- Nighttime temperature trends varied across cities, indicating spatial heterogeneity in thermal dynamics.  
-- Strong vegetation–temperature relationships were observed in Addis Ababa and Jimma (R² > 0.51).  
-- Urban heat hotspots were highly associated with impervious surfaces and exposed soil.  
 
 ![Summary map](Image.png)
 
-## Funding  
-This study was funded by the European Union’s Horizon Europe Research and Innovation Programme under the ENABLE Project (Grant Agreement No. 101137232). The funder had no role in study design, data collection, data analysis, interpretation of results, or manuscript preparation and submission.
 
