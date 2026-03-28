@@ -3,7 +3,6 @@
 //  Remote sensing of urban heat dynamics and the cooling effect of urban green spaces in Ethiopian cities
 //  ******************************************************************************************************
 
-
 // =====================================================
 // 1️ STUDY AREA & GLOBAL SETTINGS
 // =====================================================
@@ -21,7 +20,6 @@ var years = [2021, 2022, 2023, 2024];
 
 // Center map
 Map.centerObject(cities["Addis"], 10);
-
 
 // =====================================================
 // 2️ PREPROCESSING FUNCTIONS
@@ -51,7 +49,6 @@ function scaleL8(image) {
   return image.addBands(optical, null, true)
               .addBands(thermal, null, true);
 }
-
 
 // =====================================================
 // 3️ NDVI WORKFLOW (SEASONAL, MONTHLY, TIMESERIES)
@@ -136,7 +133,6 @@ function ndviTimeSeries(city, name) {
   print(name + ' NDVI Time Series', chart);
 }
 
-
 // =====================================================
 // 4️ LST WORKFLOW (LANDSAT)
 // =====================================================
@@ -188,7 +184,6 @@ function seasonalLST(city, name, year) {
   });
 }
 
-
 // =====================================================
 // 5️ MODIS LST (DAY/NIGHT TIMESERIES & MAPS)
 // =====================================================
@@ -228,7 +223,6 @@ function modisExport(city, name) {
     fileFormat: 'CSV'
   });
 }
-
 
 // =====================================================
 // 6️ EXECUTION PIPELINE
