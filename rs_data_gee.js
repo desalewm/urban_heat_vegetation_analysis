@@ -240,3 +240,4 @@ Object.keys(cities).forEach(function(name){
   ndviTimeSeries(city, name);
   modisExport(city, name);
 });
+
